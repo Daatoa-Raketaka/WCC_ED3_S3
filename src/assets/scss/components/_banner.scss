@@ -1,0 +1,32 @@
+@import "../partials/flex";
+
+$navbar-height: 80px;
+$navbar-inline-padding: 30px;
+
+.banner {
+  position: relative;
+  width: 100vw;
+  height: calc(100vh - $navbar-height);
+  background-color: white;
+  @include flex(row, flex-start, flex-end);
+  
+  h1 {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    font-size: 8vw;
+    font-family: "Panchang", sans-serif;
+    padding-inline: $navbar-inline-padding;
+    display: inline-block;
+
+    .D,
+    .R {
+      color: var(--red);
+    }
+    
+    .R {
+      display: inline-block;
+      transform: rotateY(180deg);
+    }
+  }
+}

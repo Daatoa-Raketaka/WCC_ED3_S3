@@ -28,6 +28,11 @@ $navbar-inline-padding: 30px;
       font-family: "Panchang", sans-serif;
       font-size: 16px;
 
+      .D,
+      .R {
+        color: var(--red);
+      }
+
       .R {
         display: inline-block;
         transform: rotateY(180deg);
@@ -60,6 +65,8 @@ $navbar-inline-padding: 30px;
         font-family: "Alpino", sans-serif;
         padding: 3px 5px;
         font-size: 16px;
+        font-weight: 500;
+        color: black;
 
         &:hover {
           &::after {
@@ -122,6 +129,16 @@ $navbar-inline-padding: 30px;
       padding: 50px $navbar-inline-padding;
       font-family: "Panchang", sans-serif;
       font-size: 50px;
+
+      .D,
+      .R {
+        color: var(--red);
+      }
+
+      .R {
+        display: inline-block;
+        transform: rotateY(180deg);
+      }
 
       &:hover {
         &::after {

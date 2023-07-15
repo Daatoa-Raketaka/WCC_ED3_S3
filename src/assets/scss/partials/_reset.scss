@@ -1,3 +1,7 @@
+:root {
+  --red: #f43148;
+}
+
 @font-face {
   font-family: "Panchang";
   src: url("/src/assets/fonts/Panchang-Variable.ttf");
@@ -16,7 +20,11 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
+  scroll-behavior: smooth;
+  cursor: none;
 }
+
+*::-webkit-scrollbar { display: none; }
 
 a {
   text-decoration: none;

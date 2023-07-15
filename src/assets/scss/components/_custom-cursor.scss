@@ -1,0 +1,9 @@
+.custom-cursor {
+  position: absolute;
+  z-index: 500;
+  pointer-events: none;
+  width: 30px;
+  height: 30px;
+  background-color: transparent;
+  backdrop-filter: invert(1);
+}
