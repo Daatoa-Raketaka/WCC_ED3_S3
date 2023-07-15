@@ -11,8 +11,8 @@ navbarChoiceBtn.addEventListener('click', () => { navbarChoice.classList.toggle(
 const customCursor = document.querySelector('.custom-cursor') as HTMLElement
 
 window.addEventListener('mousemove', (e: MouseEvent) => {
-  customCursor.style.left = `${e.clientX}px`
-  customCursor.style.top = `${e.clientY}px`
+  customCursor.style.left = `${e.pageX}px`
+  customCursor.style.top = `${e.pageY}px`
   customCursor.style.transform = 'translate(-50%, -50%) rotateZ(45deg)'
 })
 
