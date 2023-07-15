@@ -1,0 +1,19 @@
+@import "./assets/scss/partials/reset";
+
+/* Components */
+@import "./assets/scss/components/navbar";
+@import "./assets/scss/components/banner";
+@import "./assets/scss/components/custom-cursor";
+
+#bg {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: black;
+}
+
+.banner {
+    background-color: transparent;
+}
