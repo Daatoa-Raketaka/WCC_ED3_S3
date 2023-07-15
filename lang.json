@@ -1,0 +1,17 @@
+{
+    "skill": {
+        "mg": "",
+        "fr": "",
+        "en": "Skills"
+    },
+    "xp": {
+        "mg": "",
+        "fr": "Expériences",
+        "en": "Experiences"
+    },
+    "proj": {
+        "mg": "",
+        "fr": "Projets",
+        "en": "Projects"
+    }
+}
