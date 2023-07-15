@@ -1,9 +1,21 @@
+@font-face {
+  font-family: "Panchang";
+  src: url("/src/assets/fonts/Panchang-Variable.ttf");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Alpino";
+  src: url("/src/assets/fonts/Alpino-Variable.ttf");
+  font-display: swap;
+}
+
 *,
 *::before,
 *::after {
   margin: 0;
   padding: 0;
-  box-sizing: 0;
+  box-sizing: border-box;
 }
 
 a {
@@ -14,6 +26,6 @@ a {
 html,
 body {
   position: relative;
-  min-width: 100vw;
+  width: 100vw;
   min-height: 100vh;
 }
