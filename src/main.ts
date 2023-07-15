@@ -1,3 +1,4 @@
+import { initLang } from './modules/lang.module'
 import './style.scss'
 
 /* Navbar choice */
@@ -13,4 +14,8 @@ window.addEventListener('mousemove', (e: MouseEvent) => {
   customCursor.style.left = `${e.clientX}px`
   customCursor.style.top = `${e.clientY}px`
   customCursor.style.transform = 'translate(-50%, -50%) rotateZ(45deg)'
+})
+
+window.addEventListener('load', () => {
+  initLang()
 })
