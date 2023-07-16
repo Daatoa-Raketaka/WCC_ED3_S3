@@ -3,7 +3,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 import SplitType from 'split-type'
 
 export function initSplit() {
-    const text = new SplitType('.banner h1:not(span)', { types: 'chars' })
+    const text = new SplitType('.banner h1', { types: 'chars' })
 
     gsap.registerPlugin(ScrollTrigger)
 
@@ -11,6 +11,7 @@ export function initSplit() {
         opacity: 0,
         translateX: 1000,
         duration: 0.8,
+        delay: 1,
         stagger: { amount: 0.5 },
     })
 
@@ -24,7 +25,7 @@ export function initSplit() {
             start: 'bottom 20%'
         },
         opacity: 0,
-        translateX: 1000,
+        translateX: '100%',
         duration: 0.5,
         stagger: { amount: 0.5 },
     })

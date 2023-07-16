@@ -1,8 +1,9 @@
 import { initLang } from './modules/lang.module'
 import { initSplit } from './modules/split.module'
 import { initSwiper } from './modules/swiper.module'
-import { init } from 'aos'
 import './style.scss'
+import { initAnimation, initOnScrollParallax } from './modules/anim.module'
+import { initScroll } from './modules/scroll.module'
 
 /* Navbar choice */
 const languageBtn = document.querySelector('#language') as HTMLElement
@@ -29,6 +30,9 @@ window.addEventListener('mousemove', (e: MouseEvent) => {
   customCursor.style.left = `${e.pageX}px`
   customCursor.style.top = `${e.pageY}px`
   customCursor.style.transform = 'translate(-50%, -50%) rotateZ(45deg)'
+
+  if ((e.target as HTMLElement).classList.contains('link')) customCursor.classList.add('hover-link')
+  else customCursor.classList.remove('hover-link')
 })
 
 window.addEventListener('load', () => {
@@ -47,9 +51,9 @@ window.addEventListener('load', () => {
   overlay.addEventListener('animationend', onLoaded)
 
   initLang()
-  initSplit()
   initSwiper()
-  init({
-    duration: 500
-  })
+  initScroll()
+  initOnScrollParallax()
+  initAnimation()
+  initSplit()
 })
