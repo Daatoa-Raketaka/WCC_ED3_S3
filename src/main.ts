@@ -20,6 +20,20 @@ window.addEventListener('mousemove', (e: MouseEvent) => {
 })
 
 window.addEventListener('load', () => {
+  const loading = document.querySelector('.loading') as HTMLElement
+  loading.classList.add('load-gg')
+
+  const overlay = document.querySelector('.overlay') as HTMLElement
+  overlay.classList.add('loaded')
+
+  const onLoaded = () => {
+    loading.style.display = 'none'
+    overlay.style.display = 'none'
+    overlay.removeEventListener('animationend', onLoaded)
+  }
+
+  overlay.addEventListener('animationend', onLoaded)
+
   initLang()
   initSplit()
   initSwiper()

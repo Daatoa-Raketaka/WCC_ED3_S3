@@ -1,0 +1,51 @@
+.loading {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 9000;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: black;
+    transition: opacity 1s;
+
+    img {
+        animation: logo 3s linear infinite;
+    }
+}
+
+.load-gg { opacity: 0; }
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    z-index: 1000;
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+
+    div {
+        height: 100%;
+        background-color: black;
+    }
+}
+
+.loaded {
+    div { animation: loaded 1s 1s; }
+}
+
+@keyframes loaded {
+    from { height: 100%; }
+    to { height: 0px; }
+}
+
+@keyframes logo {
+    0% { filter: drop-shadow(0px 0px 8px var(--red)); }
+    50% { filter: drop-shadow(0px 0px 0px var(--red)); }
+    100% { filter: drop-shadow(0px 0px 8px var(--red)); }
+}
