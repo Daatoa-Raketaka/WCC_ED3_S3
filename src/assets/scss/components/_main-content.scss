@@ -52,6 +52,7 @@ $navbar-inline-padding: 30px;
         font-size: 18px;
         font-family: "Panchang", sans-serif;
         transition: all .2s ease-in-out;
+        z-index: 90;
 
         &:hover {
           &::after {

@@ -74,7 +74,7 @@ $navbar-inline-padding: 30px;
             width: 100%;
           }
         }
-        
+
         &::after {
           position: absolute;
           content: "";
@@ -84,6 +84,74 @@ $navbar-inline-padding: 30px;
           height: 100%;
           backdrop-filter: invert(1);
           transition: all .2s ease-in-out;
+        }
+      }
+
+      #language {
+        position: relative;
+        width: max-content;
+        height: max-content;
+        margin-inline: 15px;
+        font-family: "Alpino", sans-serif;
+        padding: 3px 5px;
+        font-size: 16px;
+        font-weight: 500;
+        color: black;
+
+        &:hover {
+          &::after {
+            width: 100%;
+          }
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 0;
+          height: 100%;
+          backdrop-filter: invert(1);
+          transition: all .2s ease-in-out;
+        }
+
+        .multi {
+          position: absolute;
+          top: 50px;
+          left: 0;
+          text-align: center;
+          background-color: white;
+          color: black;
+          display: none;
+
+          &.active {
+            display: inherit;
+          }
+
+          p {
+            position: relative;
+            width: 100%;
+            height: max-content;
+            padding: 8px 15px;
+            font-weight: 400;
+
+            &::after {
+              position: absolute;
+              content: "";
+              top: 0;
+              left: 0;
+              width: 0;
+              height: 100%;
+              backdrop-filter: invert(1);
+              transition: all .2s ease-in-out;
+            }
+
+            &:hover {
+              &::after {
+                width: 100%;
+              }
+            }
+          }
         }
       }
     }
@@ -106,6 +174,7 @@ $navbar-inline-padding: 30px;
     }
 
   }
+
   .choice-swipe {
     position: fixed;
     top: $navbar-height;
@@ -118,7 +187,7 @@ $navbar-inline-padding: 30px;
     overflow: hidden;
     transition: all .3s linear;
     z-index: 98;
-    
+
     &.active {
       height: calc(100vh - $navbar-height);
     }
