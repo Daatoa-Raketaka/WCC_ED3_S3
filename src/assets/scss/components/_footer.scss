@@ -1,0 +1,52 @@
+@import "../partials/grid";
+
+$navbar-inline-padding: 30px;
+
+footer {
+  position: relative;
+  width: 100vw;
+  height: max-content;
+  padding: 50px $navbar-inline-padding;
+
+  h1 {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    margin-bottom: 30px;
+    font-size: 3vw;
+    font-family: "Panchang", sans-serif;
+  }
+
+  .container {
+    position: relative;
+    width: 100%;
+    height: max-content;
+    @include grid(repeat(2, 50%), auto);
+    column-gap: 20px;
+
+    @media screen and (max-width: 1024px) {
+      display: block;
+    }
+
+    .daatoa,
+    .raketaka {
+      position: relative;
+      width: 100%;
+      height: max-content;
+
+      h2 {
+        position: relative;
+        font-family: "Panchang", sans-serif;
+        background: linear-gradient(to right, var(--red), var(--blue));
+        -webkit-background-clip: text;
+        -webkit-text-fill-color: transparent;
+      }
+
+      .list {
+        position: relative;
+        width: 100%;
+        height: max-content;
+      }
+    }
+  }
+}
