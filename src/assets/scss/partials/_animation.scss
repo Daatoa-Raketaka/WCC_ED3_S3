@@ -19,6 +19,16 @@
     to { transform: translateY(0%); }
 }
 
+@keyframes left {
+    from { transform: translateX(100%); }
+    to { transform: translateX(0%); }
+}
+
+@keyframes right {
+    from { transform: translateX(-100%); }
+    to { transform: translateX(0%); }
+}
+
 
 .fade { opacity: 1; animation: fade; } 
 .fade-zoom-in { opacity: 1; animation: fade-zoom-in; }
@@ -31,3 +41,8 @@
 .fade-in-right-reverse { opacity: 0; animation: fade-in-right reverse; }
 .fade-in-left { opacity: 1; animation: fade-in-left; }
 .fade-in-left-reverse { opacity: 0; animation: fade-in-left reverse; }
+
+.scroll-anim {
+    overflow: hidden;
+    height: min-content;
+}
