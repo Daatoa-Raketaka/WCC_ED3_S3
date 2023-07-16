@@ -109,6 +109,7 @@ $navbar-inline-padding: 30px;
           }
 
           h2 {
+            width: min-content;
             position: relative;
             font-family: "Panchang", sans-serif;
             background: linear-gradient(to right, var(--red), var(--blue));
