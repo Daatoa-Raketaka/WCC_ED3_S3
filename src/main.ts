@@ -8,15 +8,26 @@ import './style.scss'
 const navbarChoiceBtn = document.querySelector('.navbar>.right-side>.portfolio-choice>.icon') as HTMLElement
 const navbarChoice = document.querySelector('.navbar>.choice-swipe') as HTMLElement
 const choices = navbarChoice.querySelectorAll('.choice') as NodeList
+const languageBtn = document.querySelector('#language') as HTMLElement
+const languagesContainer = document.querySelector('#language>.multi') as HTMLElement
+const languages = document.querySelectorAll('#language>.multi p') as NodeList
 
 navbarChoiceBtn.addEventListener('click', () => { navbarChoice.classList.toggle('active') })
 
 choices.forEach(choice => {
   (choice as HTMLElement).addEventListener('click', () => {
     navbarChoice.classList.toggle('active')
-    if (choice === choices[0]) {
-      scrollTo(0, document.getElementById('daatoa-swiper')?.scrollTop as number)
-    }
+  })
+})
+
+languageBtn.addEventListener('click', () => {
+  languagesContainer.classList.toggle('active')
+})
+
+languages.forEach(lang => {
+  (lang as HTMLElement).addEventListener('click', () => {
+    (document.querySelector('html') as HTMLHtmlElement).setAttribute('lang', (lang as HTMLElement).classList[0]);
+    initLang()
   })
 })
 

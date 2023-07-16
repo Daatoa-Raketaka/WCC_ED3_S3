@@ -1,4 +1,9 @@
 {
+    "banner": {
+        "mg": "Miarahaba anao. D&R dia ekipa iray rafetin'i Fuji sy Baibs ka misehatra eo amin'ny lafiny web.\n Ndao hojerena ary.",
+        "fr": "Hello. D&R est une equipe composée de Fuji et Baibs qui travaille dans le domaine du web.\n Allons visiter.",
+        "en": "Hello. D&R is a team composed by Fuji and Baibs that works in web development.\n So let's discover."
+    },
     "skill": {
         "mg": "Fahaizana",
         "fr": "Compétences",
@@ -63,5 +68,10 @@
         "mg": "Laharana voalohany - Integrator tao anaty ekipa rafetin'olona 5",
         "fr": "1ère Place - Intégratuer HTML/CSS dans une équipe de 5 personnes",
         "en": "1st Place - Integrator in 5 people team"
+    },
+    "language": {
+        "mg": "Fiteny",
+        "fr": "Langue",
+        "en": "Language"
     }
 }
