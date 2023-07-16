@@ -7,8 +7,18 @@ import './style.scss'
 /* Navbar choice */
 const navbarChoiceBtn = document.querySelector('.navbar>.right-side>.portfolio-choice>.icon') as HTMLElement
 const navbarChoice = document.querySelector('.navbar>.choice-swipe') as HTMLElement
+const choices = navbarChoice.querySelectorAll('.choice') as NodeList
 
 navbarChoiceBtn.addEventListener('click', () => { navbarChoice.classList.toggle('active') })
+
+choices.forEach(choice => {
+  (choice as HTMLElement).addEventListener('click', () => {
+    navbarChoice.classList.toggle('active')
+    if (choice === choices[0]) {
+      scrollTo(0, document.getElementById('daatoa-swiper')?.scrollTop as number)
+    }
+  })
+})
 
 /* Custom cursor */
 const customCursor = document.querySelector('.custom-cursor') as HTMLElement
