@@ -10,7 +10,7 @@
   },
   "devDependencies": {
     "@types/aos": "^3.0.4",
-    "@types/three": "^0.154.0",
+    "@types/three": "0.149.0",
     "sass": "^1.63.6",
     "typescript": "^5.0.2",
     "vite": "^4.4.0"
@@ -20,7 +20,7 @@
     "gsap": "^3.12.2",
     "split-type": "^0.3.3",
     "swiper": "^10.0.4",
-    "three": "^0.154.0",
+    "three": "0.149.0",
     "vanilla-tilt": "^1.8.0"
   }
 }
