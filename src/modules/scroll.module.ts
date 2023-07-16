@@ -17,7 +17,8 @@ export function initScroll() {
             target.addEventListener('animationend', () => target.style.transition = currentTransition)
         })
     }, {
-        threshold: 0.5
+        threshold: 0.5,
+        rootMargin: '80px'
     })
 
     document.querySelectorAll('[data-dr-scroll]').forEach(el => {        
@@ -25,5 +26,26 @@ export function initScroll() {
         (el as HTMLElement).style.animationDuration = el.getAttribute('data-dr-duration') + 'ms'
 
         intersectionObserver.observe(el)
+    })
+
+    const overflowObserver = new IntersectionObserver(entries => {
+        entries.forEach(entry => {
+            const target = entry.target as HTMLElement
+
+            if (entry.isIntersecting) {
+                (target.firstElementChild as HTMLElement).style.animation = target.getAttribute('data-dr-overflow') as string;
+                (target.firstElementChild as HTMLElement).style.opacity = '1'
+            }
+            else {
+                (target.firstElementChild as HTMLElement).style.animation = 'none';
+                (target.firstElementChild as HTMLElement).style.opacity = '0'
+            }
+        })
+    }, {
+        threshold: 1
+    })
+
+    document.querySelectorAll('[data-dr-overflow]').forEach(el => {
+        overflowObserver.observe(el)
     })
 }
