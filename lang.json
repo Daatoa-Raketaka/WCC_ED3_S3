@@ -1,11 +1,11 @@
 {
     "skill": {
-        "mg": "",
-        "fr": "",
+        "mg": "Fahaizana",
+        "fr": "Compétences",
         "en": "Skills"
     },
     "xp": {
-        "mg": "",
+        "mg": "Traikefa",
         "fr": "Expériences",
         "en": "Experiences"
     },
@@ -13,5 +13,10 @@
         "mg": "",
         "fr": "Projets",
         "en": "Projects"
+    },
+    "daatoa-portfolio": {
+        "mg": "",
+        "fr": "Je suis un étudiant développeur enthousiaste, toujours prêt à transformer mes idées en code et à créer des solutions innovantes. De plus, ma passion pour la modélisation 3D ajoute une dimension artistique à mes projets, me permettant de donner vie à des concepts visuels uniques.",
+        "en": "I am an enthusiast student developer, ready to make my ideas into reality. Meanwhile, I love 3D modeling and that give artistic touch to my projects design."
     }
 }
