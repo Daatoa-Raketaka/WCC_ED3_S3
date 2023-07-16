@@ -54,9 +54,6 @@ $navbar-inline-padding: 30px;
       height: max-content;
       display: inherit;
 
-      @media screen and (max-width: 768px) {
-        display: none;
-      }
 
       .link {
         position: relative;
@@ -68,6 +65,10 @@ $navbar-inline-padding: 30px;
         font-size: 16px;
         font-weight: 500;
         color: black;
+
+        @media screen and (max-width: 768px) {
+          display: none;
+        }
 
         &:hover {
           &::after {

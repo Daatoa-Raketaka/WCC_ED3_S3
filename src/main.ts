@@ -5,20 +5,11 @@ import { init } from 'aos'
 import './style.scss'
 
 /* Navbar choice */
-const navbarChoiceBtn = document.querySelector('.navbar>.right-side>.portfolio-choice>.icon') as HTMLElement
-const navbarChoice = document.querySelector('.navbar>.choice-swipe') as HTMLElement
-const choices = navbarChoice.querySelectorAll('.choice') as NodeList
 const languageBtn = document.querySelector('#language') as HTMLElement
 const languagesContainer = document.querySelector('#language>.multi') as HTMLElement
 const languages = document.querySelectorAll('#language>.multi p') as NodeList
 
-navbarChoiceBtn.addEventListener('click', () => { navbarChoice.classList.toggle('active') })
 
-choices.forEach(choice => {
-  (choice as HTMLElement).addEventListener('click', () => {
-    navbarChoice.classList.toggle('active')
-  })
-})
 
 languageBtn.addEventListener('click', () => {
   languagesContainer.classList.toggle('active')
