@@ -1,6 +1,6 @@
 import './3D.scss'
 
-import { Group, PerspectiveCamera, Scene, WebGLRenderer, VSMShadowMap, Vector3, Object3D, TextureLoader, ReinhardToneMapping, Vector2, Layers, ShaderMaterial, MeshBasicMaterial, MeshStandardMaterial, MeshPhongMaterial, DoubleSide, Color } from 'three'
+import { Group, PerspectiveCamera, Scene, WebGLRenderer, VSMShadowMap, Vector3, TextureLoader, ReinhardToneMapping, Vector2, Layers, ShaderMaterial, MeshBasicMaterial, MeshPhongMaterial, DoubleSide, Color } from 'three'
 import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader'
 import { EffectComposer } from 'three/examples/jsm/postprocessing/EffectComposer'
 import { RenderPass } from 'three/examples/jsm/postprocessing/RenderPass'
@@ -124,10 +124,10 @@ fbxLoader.load('/Setup.fbx', (obj: Group) => {
 } */)
 
 /** Emit and receive shadow **/
-function configureShadow(model: Object3D) {
+/* function configureShadow(model: Object3D) {
     model.receiveShadow = true
     model.castShadow = true
-}
+} */
 
 window.addEventListener('mousemove', (ev) => {
     const offset = 0.2
