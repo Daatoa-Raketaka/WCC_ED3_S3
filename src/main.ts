@@ -1,6 +1,7 @@
 import { initLang } from './modules/lang.module'
 import { initSplit } from './modules/split.module'
 import { initSwiper } from './modules/swiper.module'
+import { init } from 'aos'
 import './style.scss'
 
 /* Navbar choice */
@@ -22,4 +23,7 @@ window.addEventListener('load', () => {
   initLang()
   initSplit()
   initSwiper()
+  init({
+    duration: 500
+  })
 })
