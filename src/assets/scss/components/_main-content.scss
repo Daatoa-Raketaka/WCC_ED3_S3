@@ -40,6 +40,36 @@ $navbar-inline-padding: 30px;
           font-size: 2.5vw;
         }
       }
+
+      .curriculum-vitae {
+        position: absolute;
+        top: $navbar-inline-padding;
+        width: max-content;
+        height: max-content;
+        background-color: black;
+        color: white;
+        padding: 10px 15px;
+        font-size: 18px;
+        font-family: "Panchang", sans-serif;
+        transition: all .2s ease-in-out;
+
+        &:hover {
+          &::after {
+            height: 100%;
+          }
+        }
+
+        &::after {
+          position: absolute;
+          content: "";
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: 0;
+          backdrop-filter: invert(1);
+          transition: all .2s ease-in-out;
+        }
+      }
     }
 
     .skills {
@@ -185,6 +215,10 @@ $navbar-inline-padding: 30px;
           text-align: right;
         }
       }
+
+      .curriculum-vitae {
+        left: $navbar-inline-padding;
+      }
     }
   }
 
@@ -202,6 +236,10 @@ $navbar-inline-padding: 30px;
         .text {
           text-align: left;
         }
+      }
+
+      .curriculum-vitae {
+        right: $navbar-inline-padding;
       }
     }
   }
