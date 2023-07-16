@@ -10,6 +10,19 @@
 <body>
   <canvas id="bg"></canvas>
 
+  <div class="loading">
+    <img src="/logo.svg" alt="">
+  </div>
+
+  <div class="overlay">
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+    <div></div>
+  </div>
+
   <!-- Navbar -->
   <nav class="navbar">
     <div class="logo">
@@ -21,10 +34,17 @@
     </div>
     <div class="right-side">
       <div class="links">
-        <a href="#" class="link">Portfolio</a>
-        <a href="#" class="link" data-lang="skill"></a>
-        <a href="#" class="link" data-lang="xp"></a>
-        <a href="#" class="link" data-lang="proj"></a>
+        <a href="#portfolio" class="link">Portfolio</a>
+        <a href="#skills" class="link" data-lang="skill"></a>
+        <a href="#xp" class="link" data-lang="xp"></a>
+        <div id="language">
+          <p class="title" data-lang="language"></p>
+          <div class="multi">
+            <p class="mg">Malagasy</p>
+            <p class="fr">French</p>
+            <p class="en">English</p>
+          </div>
+        </div>
       </div>
       <div class="portfolio-choice">
         <svg class="icon" xmlns="http://www.w3.org/2000/svg" width="28" height="28" viewBox="0 0 24 24">
@@ -34,10 +54,10 @@
       </div>
     </div>
     <div class="choice-swipe">
-      <h1 class="choice">
+      <h1 class="choice" data-aos="progressive">
         <span class="D">D</span>aatoa
       </h1>
-      <h1 class="choice">
+      <h1 class="choice" data-aos="progressive">
         <span class="R">R</span>aketaka
       </h1>
     </div>
@@ -45,10 +65,271 @@
 
   <!-- Banner -->
   <div class="banner">
+    <p class="text" data-lang="banner"></p>
     <h1>
       <span class="D">D</span>aatoa <br>
       <span class="R">R</span>aketaka.
     </h1>
+  </div>
+
+  <!-- Main content -->
+  <div class="main-content swiper">
+
+    <div class="swiper-wrapper">
+    
+      <!-- Daatoa -->
+      <div class="Daatoa swiper-slide">
+        <div class="portfolio" id="portfolio">
+          <div class="bg"></div>
+          <div class="content">
+            <div class="scroll-anim" data-dr-overflow="up 500ms">
+              <h1 class="title">Daatoa (alias Fuji)</h1>
+            </div>
+            
+            <div class="scroll-anim" data-dr-overflow="up 500ms">
+              <p class="text">
+                <span data-lang="daatoa-portfolio"></span>
+              </p>
+            </div>
+          </div>
+          <a href="/daatoa.pdf" data-dr-scroll="fade-in-up" data-dr-duration="500" class="curriculum-vitae" download>Curriculum vitae</a>
+        </div>
+        <div class="skills" id="skills">
+          <div class="scroll-anim" data-dr-overflow="up 500ms">
+            <h1 data-lang="skill"></h1>
+          </div>
+          <div class="container">
+            <div class="stacks">
+              <h2>Stacks</h2>
+
+              <div class="scroll-anim" data-dr-overflow="up 500ms">
+                <div class="list">
+                  <p class="list-item">NestJS</p>
+                  <p class="list-item">ReactJS</p>
+                  <p class="list-item">VueJS</p>
+                  <p class="list-item">ExpressJS</p>
+                  <p class="list-item">ThreeJS</p>
+                  <p class="list-item">Rust</p>
+                  <p class="list-item">Arduino</p>
+                  <p class="list-item">HTML</p>
+                  <p class="list-item">CSS</p>
+                  <p class="list-item">Django</p>
+                  <p class="list-item">C#</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="database">
+              <h2>Database</h2>
+
+              <div class="scroll-anim" data-dr-overflow="up 500ms">
+                <div class="list">
+                  <p class="list-item">SQL</p>
+                  <p class="list-item">MongoDB</p>
+                  <p class="list-item">PostgreSQL</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="tools">
+              <h2>Tools</h2>
+
+              <div class="scroll-anim" data-dr-overflow="up 500ms">
+                <div class="list">
+                  <p class="list-item">Unity</p>
+                  <p class="list-item">Git & Github</p>
+                  <p class="list-item">Figma</p>
+                  <p class="list-item">Docker</p>
+                  <p class="list-item">Blender</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="others">
+              <h2>Others</h2>
+
+              <div class="scroll-anim" data-dr-overflow="up 500ms">
+                <div class="list">
+                  <p class="list-item">3D Modelling</p>
+                  <p class="list-item">Game Development</p>
+                  <p class="list-item">Guitar</p>
+                </div>
+              </div>
+              
+            </div>
+          </div>
+        </div>
+        <div class="experiences" id="xp">
+          <div class="scroll-anim" data-dr-overflow="up 500ms">
+            <h1 data-lang="xp"></h1>
+          </div>
+          <div class="container">
+            <div class="scroll-anim" data-dr-overflow="left 700ms">
+              <div class="experience">
+                <p class="title">
+                  <span class="date">(2023)</span>
+                  <span class="text">Hackathon Inter Universitaire</span>
+                </p>
+                <p class="description" data-lang="daatoa-xp-1"></p>
+              </div>
+            </div>
+
+            <div class="scroll-anim" data-dr-overflow="left 700ms">
+              <div class="experience">
+                <p class="title">
+                  <span class="date">(2022)</span>
+                  <span class="text">Front-End Awards</span>
+                </p>
+                <p class="description" data-lang="daatoa-xp-2"></p>
+              </div>
+            </div>
+
+            <div class="scroll-anim" data-dr-overflow="left 700ms">
+              <div class="experience">
+                <p class="title">
+                  <span class="date">(2022)</span>
+                  <span class="text">Weekly Coding Challenge</span>
+                </p>
+                <p class="description" data-lang="daatoa-xp-3"></p>
+              </div>
+            </div>
+
+            <div class="scroll-anim" data-dr-overflow="left 700ms">
+              <div class="experience">
+                <p class="title">
+                  <span class="date">(2021)</span>
+                  <span class="text">Front-End Awards</span>
+                </p>
+                <p class="description" data-lang="daatoa-xp-4"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Raketaka -->
+      <div class="Raketaka swiper-slide" id="raketaka-swiper">
+        <div class="portfolio">
+          <div class="bg"></div>
+          <div class="content">
+            <div class="scroll-anim" data-dr-overflow="up 500ms">
+              <h1 class="title">Raketaka (alias Baibs)</h1>
+            </div>
+            <div class="scroll-anim" data-dr-overflow="up 500ms">
+              <p class="text">
+                <span data-lang="raketaka-portolio"></span>
+              </p>
+            </div>
+          </div>
+          <a href="/raketaka.pdf" data-dr-scroll="fade-in-up" data-dr-duration="500" class="curriculum-vitae" download>Curriculum vitae</a>
+        </div>
+        <div class="skills">
+          <div class="scroll-anim" data-dr-overflow="up 500ms">
+            <h1 data-lang="skill"></h1>
+          </div>
+          <div class="container">
+            <div class="stacks">
+              <h2>Stacks</h2>
+              
+              <div class="scroll-anim" data-dr-overflow="up 500ms">
+                <div class="list">
+                  <p class="list-item">VueJS</p>
+                  <p class="list-item">NestJS</p>
+                  <p class="list-item">HTML</p>
+                  <p class="list-item">CSS</p>
+                  <p class="list-item">ExpressJS</p>
+                  <p class="list-item">Arduino</p>
+                  <p class="list-item">C/C++</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="database">
+              <h2>Database</h2>
+
+              <div class="scroll-anim" data-dr-overflow="up 500ms">
+                <div class="list">
+                  <p class="list-item">PostgreSQL</p>
+                  <p class="list-item">MySQL</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="tools">
+              <h2>Tools</h2>
+
+              <div class="scroll-anim" data-dr-overflow="up 500ms">
+                <div class="list">
+                  <p class="list-item">Figma</p>
+                  <p class="list-item">Git & Github</p>
+                </div>
+              </div>
+
+            </div>
+            <div class="others">
+              <h2>Others</h2>
+
+              <div class="scroll-anim" data-dr-overflow="up 500ms">
+                <div class="list">
+                  <p class="list-item">Guitar</p>
+                  <p class="list-item">Photography</p>
+                </div>
+              </div>
+
+            </div>
+          </div>
+        </div>
+        <div class="experiences">
+          <div class="scroll-anim" data-dr-overflow="up 500ms">
+            <h1 data-lang="xp"></h1>
+          </div>
+          <div class="container">
+
+            <div class="scroll-anim" data-dr-overflow="left 700ms">
+              <div class="experience">
+                <p class="title">
+                  <span class="date">(2023)</span>
+                  <span class="text">Hackathon Inter Universitaire</span>
+                </p>
+                <p class="description" data-lang="raketaka-xp-1"></p>
+              </div>
+            </div>
+
+            <div class="scroll-anim" data-dr-overflow="left 700ms">
+              <div class="experience">
+                <p class="title">
+                  <span class="date">(2022)</span>
+                  <span class="text">Front-End Awards</span>
+                </p>
+                <p class="description" data-lang="raketaka-xp-2"></p>
+              </div>
+            </div>
+
+            <div class="scroll-anim" data-dr-overflow="left 700ms">
+              <div class="experience">
+                <p class="title">
+                  <span class="date">(2022)</span>
+                  <span class="text">Weekly Coding Challenge</span>
+                </p>
+                <p class="description" data-lang="raketaka-xp-3"></p>
+              </div>
+            </div>
+
+            <div class="scroll-anim" data-dr-overflow="left 700ms">
+              <div class="experience">
+                <p class="title">
+                  <span class="date">(2021)</span>
+                  <span class="text">Front-End Awards</span>
+                </p>
+                <p class="description" data-lang="raketaka-xp-4"></p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
   </div>
 
   <!-- Custom cursor -->

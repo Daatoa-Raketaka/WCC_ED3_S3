@@ -25,7 +25,8 @@ $navbar-inline-padding: 30px;
         position: relative;
         width: 100%;
         height: 100%;
-        background-color: #00000055;
+        background-color: #000000ad;
+        backdrop-filter: blur(12px);
         color: white;
         padding: 50px $navbar-inline-padding;
 
@@ -204,7 +205,7 @@ $navbar-inline-padding: 30px;
 
   .Daatoa {
     .portfolio {
-      background-image: url("/daatoa.jpg");
+      background-image: url("/b-go.png");
       background-position: center;
       background-size: cover;
 
