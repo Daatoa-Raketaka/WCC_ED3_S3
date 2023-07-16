@@ -73,5 +73,10 @@
         "mg": "Fiteny",
         "fr": "Langue",
         "en": "Language"
+    },
+    "about-title": {
+        "mg": "Momba anay",
+        "fr": "A propos",
+        "en": "About"
     }
 }
