@@ -1,4 +1,6 @@
 import { initLang } from './modules/lang.module'
+import { initSplit } from './modules/split.module'
+import { initSwiper } from './modules/swiper.module'
 import './style.scss'
 
 /* Navbar choice */
@@ -18,4 +20,6 @@ window.addEventListener('mousemove', (e: MouseEvent) => {
 
 window.addEventListener('load', () => {
   initLang()
+  initSplit()
+  initSwiper()
 })
