@@ -41,6 +41,68 @@ $navbar-inline-padding: 30px;
         }
       }
     }
+
+    .skills {
+      position: relative;
+      width: 100%;
+      height: max-content;
+
+      h1 {
+        position: relative;
+        width: 100%;
+        height: max-content;
+        padding: 30px $navbar-inline-padding;
+        font-family: "Panchang", sans-serif;
+        font-size: 3vw;
+      }
+
+      .container {
+        position: relative;
+        width: 100%;
+        height: max-content;
+        padding: 30px $navbar-inline-padding;
+        @include grid(repeat(2, 50%), auto);
+        column-gap: 20px;
+
+        @media screen and (max-width: 1024px) {
+          display: block;
+        }
+
+        div {
+          position: relative;
+          width: 100%;
+          height: max-content;
+
+          @media screen and (max-width: 1024px) {
+            margin-block: 20px;
+          }
+
+          h2 {
+            position: relative;
+            font-family: "Panchang", sans-serif;
+          }
+
+          .list {
+            position: relative;
+            width: 100%;
+            margin-block: 20px;
+            @include grid(repeat(auto-fill, 150px), auto);
+            column-gap: 20px;
+            row-gap: 10px;
+
+            .list-item {
+              @include flex(row, center, center);
+              background-color: black;
+              color: white;
+              font-family: "Alpino", sans-serif;
+              font-size: 16px;
+              padding: 10px 0;
+              border-radius: 5px;
+            }
+          }
+        }
+      }
+    }
   }
 
   .Daatoa {
@@ -48,7 +110,7 @@ $navbar-inline-padding: 30px;
       background-image: url("/daatoa.jpg");
       background-position: center;
       background-size: cover;
-      
+
       .content {
         .title {
           text-align: right;
@@ -66,7 +128,7 @@ $navbar-inline-padding: 30px;
       background-image: url("/raketaka.jpg");
       background-position: center;
       background-size: cover;
-      
+
       .content {
         .title {
           text-align: left;
